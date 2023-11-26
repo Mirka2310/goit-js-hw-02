@@ -1,11 +1,11 @@
 let check;
+
 function formatMessage(message, maxLength) {
-  if (message <= maxLength) {
+  if (message.length <= maxLength) {
     check = message;
-  } else if (message > maxLength) {
+  }
+  else {
     check = message.slice(0, maxLength) + "...";
-  } else {
-    message = maxLength;
   }
   return check;
 }
